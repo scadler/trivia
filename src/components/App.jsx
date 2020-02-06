@@ -1,38 +1,11 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 // import components
-import Question from "Question.jsx"
-import Answer from "Answer.jsx"
+import Question from "./Question";
+import Answer from "./Answer";
+// import { buildFirebase } from '../clients/firebase.js';
 
-class App extends Component {
-constructor(props){
-  super(props);
-  this.state = {
-    q : [
-      new Question1[["answer1","answer2","answer3","answer4"], 1, "question1", "userId"],
-      new Question1[["answer5","answer6","answer7","answer8"], 2, "question2", "userId"],
-      new Question1[["answer9","answer10","answer11","answer12"], 3, "question3", "userId"],
-      new Question1[["answer13","answer14","answer15","answer16"], 4, "question4", "userId"],
-    ]
-  }
-}
-  render() {
-    return (
-      <div className="app">
-        Trivia!
-        <div>
-            <div className= "question">
-                <Question q={this.state.q[0].question_text}/>
-            </div>
-            <div className= "answers">
-                <Answer />
-            </div>
-        </div>
-      </div>
-    );
-  }
-}
 class Question1 {
   constructor(choices, correct_choice_index, question_text, user_id){
       this.choices = choices;
@@ -58,6 +31,33 @@ class Question1 {
     return this.user_id;
   }
 }
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      q : [
+        new Question1 ("dhedge", "gfdyfdey", "gde", "ydud")
+      ]
+    }
+  }
+  render() {
+    return (
+      <div className="app">
+        Trivia!
+        <div>
+            <div className="question">
+              <Question q={this.state.q[0].question_text}/>
+            </div>
+            <div className="answers">
+              <Answer />
+            </div>
+        </div>
+      </div>
+    );
+  }
+}
+
 
 
 export default App;

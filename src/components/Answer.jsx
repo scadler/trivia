@@ -14,16 +14,16 @@ class Answer extends Component {
     // return
     //     <h1><h1>
   }
-    render() {
-      return (
-        <div>
-            <button onClick = {() => this.handleClick()}>A{this.state}</button>
-            <button>B</button>
-            <button>C</button>
-            <button>D</button>
-        </div>
-      );
-    }
+  render() {
+    return (
+      <div>
+          <button onClick = {() => this.handleClick()}>A{this.state}</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+      </div>
+    );
   }
-  
-  export default Answer;
+}
+
+export default Answer;
