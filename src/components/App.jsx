@@ -5,7 +5,7 @@ import '../css/App.css';
 import Question from "./Question";
 import Answer from "./Answer";
 // import { buildFirebase } from '../clients/firebase.js';
-
+// need to get code to confirm all fields are valid and loop through questions
 class Question1 {
   constructor(choices, correct_choice_index, question_text, user_id){
       this.choices = choices;
@@ -47,7 +47,7 @@ class App extends Component {
         Trivia!
         <div>
             <div className="question">
-              <Question q={this.state.q[0].question_text}/>
+              <Question q={this.props.question[1]}/>
             </div>
             <div className="answers">
               <Answer />

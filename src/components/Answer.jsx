@@ -17,10 +17,15 @@ class Answer extends Component {
   render() {
     return (
       <div>
-          <button onClick = {() => this.handleClick()}>A{this.state}</button>
-          <button>B</button>
-          <button>C</button>
-          <button>D</button>
+        <div>
+            <button onClick = {() => this.handleClick()}>A{this.state.click}</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+        </div>
+        <div>
+          <button>Next</button>
+        </div>
       </div>
     );
   }
