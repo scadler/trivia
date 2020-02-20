@@ -31,12 +31,15 @@ class Question1 {
     return this.user_id;
   }
 }
-
+var i = 0
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       q : [
+        new Question1 ("dhedge", "gfdyfdey", "gde", "ydud")
+      ],
+      c : [
         new Question1 ("dhedge", "gfdyfdey", "gde", "ydud")
       ]
     }
@@ -47,10 +50,10 @@ class App extends Component {
         Trivia!
         <div>
             <div className="question">
-              <Question q={this.props.question[1]}/>
+              <Question q={this.props.question[i]}/>
             </div>
             <div className="answers">
-              <Answer />
+              <Answer c={this.props.question[i].choices}/>
             </div>
         </div>
       </div>
