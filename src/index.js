@@ -8,10 +8,7 @@ var database = buildFirebase();
 var databaseRef = database.ref("/questions");
 databaseRef.once("value").then(function(data) {
  const questions = Object.values(data.val());
- const choices = questions[1].choices
- console.log(questions);
- console.log(choices);
- debugger;
+
  ReactDOM.render(<App question={questions}/>, document.getElementById('root'));
 });
 

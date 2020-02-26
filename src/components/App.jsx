@@ -31,30 +31,40 @@ class Question1 {
     return this.user_id;
   }
 }
-var i = 0
+
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      q : [
-        new Question1 ("dhedge", "gfdyfdey", "gde", "ydud")
-      ],
-      c : [
-        new Question1 ("dhedge", "gfdyfdey", "gde", "ydud")
-      ]
-    }
+    this.state = {questionNumber: 0 }
+    this.choiceClick = this.choiceClick.bind(this);
+    this.nextClick = this.nextClick.bind(this);
   }
+
+  nextClick(){
+    this.setState({questionNumber: this.state.questionNumber + 1})
+    console.log(this.state.questionNumber);
+  }
+
+  choiceClick(){
+
+  }
+
   render() {
+
     return (
       <div className="app">
         Trivia!
         <div>
             <div className="question">
-              <Question q={this.props.question[i]}/>
+              <Question q={this.props.question[this.state.questionNumber]}/>
             </div>
             <div className="answers">
-              <Answer c={this.props.question[i].choices}/>
+              <Answer c={this.props.question[this.state.questionNumber].choices} cc={this.props.question[this.state.questionNumber].correct_choice_index}/>
             </div>
+            <div>
+            {/* make the next button add one to questionNumber in the app.jsx so that a new question is shown each time */}
+            <button onClick= {this.nextClick}>Next</button>
+          </div>
         </div>
       </div>
     );
