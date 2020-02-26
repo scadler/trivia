@@ -35,13 +35,13 @@ class Question1 {
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {questionNumber: 0 }
+    this.state = { questionNumber: 0 }
     this.choiceClick = this.choiceClick.bind(this);
     this.nextClick = this.nextClick.bind(this);
   }
 
   nextClick(){
-    this.setState({questionNumber: this.state.questionNumber + 1})
+    this.setState({ questionNumber: this.state.questionNumber + 1})
     console.log(this.state.questionNumber);
   }
 
@@ -53,7 +53,9 @@ class App extends Component {
 
     return (
       <div className="app">
-        Trivia!
+        <div className="trivia">
+          <h1>Trivia!</h1>
+        </div>
         <div>
             <div className="question">
               <Question q={this.props.question[this.state.questionNumber]}/>
@@ -63,7 +65,7 @@ class App extends Component {
             </div>
             <div>
             {/* make the next button add one to questionNumber in the app.jsx so that a new question is shown each time */}
-            <button onClick= {this.nextClick}>Next</button>
+            <button onClick= {this.nextClick} className= "next">Next</button>
           </div>
         </div>
       </div>

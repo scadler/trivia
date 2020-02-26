@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // import components
-
+import '../css/App.css';
 
 class Question extends Component {
   
   render() {
     return (
       <div>
-       {this.props.q.question_text}
+       <h1 className="title">{this.props.q.question_text}</h1>
       </div>
     );
   }
