@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import components
 import '../css/App.css';
-
+  
 class Question extends Component {
   
   render() {

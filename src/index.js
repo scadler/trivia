@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/App.css';
 import App from './components/App';
+import Score from "./Score";
 
 import {buildFirebase} from './clients/firebase.js';
 var database = buildFirebase();

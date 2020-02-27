@@ -4,6 +4,8 @@ import '../css/App.css';
 // import components
 import Question from "./Question";
 import Answer from "./Answer";
+import Score from "./Score";
+
 // import { buildFirebase } from '../clients/firebase.js';
 // need to get code to confirm all fields are valid and loop through questions
 class Question1 {
@@ -35,8 +37,7 @@ class Question1 {
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { questionNumber: 0 }
-    this.choiceClick = this.choiceClick.bind(this);
+    this.state = { questionNumber : 0, Score: 0};
     this.nextClick = this.nextClick.bind(this);
   }
 
@@ -45,20 +46,20 @@ class App extends Component {
     console.log(this.state.questionNumber);
   }
 
-  choiceClick(){
-
-  }
-
   render() {
-
+    
     return (
       <div className="app">
         <div className="trivia">
           <h1>Trivia!</h1>
+           <Score s={this.state.Score}/> 
         </div>
         <div>
             <div className="question">
               <Question q={this.props.question[this.state.questionNumber]}/>
+            </div>
+            <div className="picture">
+              <img className="giph" src="https://media1.giphy.com/media/eIsMLxLftsAWT59u78/giphy.gif?cid=790b7611bcdb45519f2462ca6adbc3599d942533474634f4&rid=giphy.gif"></img>
             </div>
             <div className="answers">
               <Answer c={this.props.question[this.state.questionNumber].choices} cc={this.props.question[this.state.questionNumber].correct_choice_index}/>

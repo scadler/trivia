@@ -16,28 +16,82 @@ button{
   width: 45%;
   height: 100px;
   font-size: 25px;
+  overflow: hidden;
+}
+.b1{
+  background-color: #99CCFF;
+  /* border: 10px solid yellow; */
+  border-top: 10px solid #E6E6E6;;
+    border-left: 10px solid #E6E6E6;
+    /* border-bottom: 5px solid #949494;
+    border-right: 5px solid #949494; */
+}
+.b2{
+  background-color: #99FF99;
+  border-top: 10px solid #E6E6E6;
+    /* border-left: 5px solid #FBFAF9;
+    border-bottom: 5px solid #949494; */
+    border-right: 10px solid #bbbbbb;
+}
+.b4{
+  background-color: #FFaaFF;
+  /* border-top: 5px solid #FBFAF9;
+  border-left: 5px solid #FBFAF9; */
+  border-bottom: 10px solid #bbbbbb;
+  border-right: 10px solid #bbbbbb;
+}
+.b3{
+  background-color: #FF9966;
+  /* border-top: 5px solid #FBFAF9; */
+    border-left: 10px solid #E6E6E6;
+    border-bottom: 10px solid #bbbbbb;
+    /* border-right: 5px solid #949494; */
+}
 
-  margin-top: 5%;
+
+.next{
+  background-color: #FFFFaa;
+  border-top: 10px solid #E6E6E6;
+    border-left: 5px solid #E6E6E6;
+    border-bottom: 5px solid #bbbbbb;
+    border-right: 10px solid #bbbbbb;
 }
 
 .b1:hover{
-  background-color: blue;
+  background-color: #0066FF;
+  -webkit-transition-duration: 2s;
+    transition-duration: 0.6s;
 }
 
 .b2:hover{
-  background-color: green;
+  background-color: #0FFF0F;
+  -webkit-transition-duration: 2s;
+    transition-duration: 0.6s;
 }
 
 .b3:hover{
-  background-color: purple;
+  background-color: #FF4444;
+  -webkit-transition-duration: 2s;
+    transition-duration: 0.6s;
 }
 
 .b4:hover{
-  background-color: red;
+  background-color: #FF00FF;
+  -webkit-transition-duration: 2s;
+    transition-duration: 0.6s;
 }
 
+.next{
+  margin-top: 2%;
+}
+/* #answers{
+  border: 8px solid yellowgreen;
+
+} */
 .next:hover{
   background-color: yellow;
+  -webkit-transition-duration: 2s;
+    transition-duration: 0.6s;
 }
 
 .title{

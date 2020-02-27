@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 //import components
+import Score from "./Score";
 
+let answered = false;
 class Answer extends Component {
 
   constructor(props) {
     super(props);
     this.state = { click : 0 };
   }
-
+  
   handleClick(){
     this.setState()
   }
@@ -41,7 +43,7 @@ class Answer extends Component {
     console.log(this.props.cc)
     return (
       <div>
-        <div>
+        <div id="answers">
             <button onClick = {() => this.correctClick0((this.props.cc))} className="b1">{this.props.c[0]}</button>
             <button onClick = {() => this.correctClick1((this.props.cc))} className="b2">{this.props.c[1]}</button>
             <button onClick = {() => this.correctClick2((this.props.cc))} className="b3">{this.props.c[2]}</button>
