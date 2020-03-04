@@ -27,7 +27,9 @@ class Right extends Component{
     "https://media3.giphy.com/media/3oriOfixsKjISS9kR2/giphy.webp?cid=790b7611b32e9bc74e8beb1f6597c68732105124f23e45d0&rid=giphy.webp",
     "https://media2.giphy.com/media/qPcX2mzk3NmjC/200.webp?cid=790b7611f8a34f4e9e206e7ff11ed676ea0e75a72fd66160&rid=200.webp", 
     "https://media1.giphy.com/media/kEKcOWl8RMLde/giphy.webp?cid=790b76118b22be17a543468a13eb28d0898021abdac22ff5&rid=giphy.webp", 
-    "https://media3.giphy.com/media/mIZ9rPeMKefm0/giphy.webp?cid=790b76118b22be17a543468a13eb28d0898021abdac22ff5&rid=giphy.webp"];
+    "https://media3.giphy.com/media/mIZ9rPeMKefm0/giphy.webp?cid=790b76118b22be17a543468a13eb28d0898021abdac22ff5&rid=giphy.webp",
+    "https://media1.giphy.com/media/3oz8xH46dD1DSx3vNK/giphy.webp?cid=790b76115c42edca1f04d15ce50b8e16dbebe4b262f74d89&rid=giphy.webp", 
+    "https://media2.giphy.com/media/6nuiJjOOQBBn2/giphy.webp?cid=790b76115c42edca1f04d15ce50b8e16dbebe4b262f74d89&rid=giphy.webp"];
     let random = Math.floor(Math.random() * right.length);
 
         return(

@@ -26,7 +26,12 @@ class Wrong extends Component{
     "https://media1.giphy.com/media/pG5zDvKjxisAYLjsx7/giphy.webp?cid=790b76115e529ccfe9ddbb474eec0b8f1b6d047c80a44145&rid=giphy.webp",
     "https://media0.giphy.com/media/oy3KWBNjxG6YST6pak/giphy.webp?cid=790b761106cb7ff9576e18a685aea8625be5d5bb3ba23fd5&rid=giphy.webp",
     "https://media3.giphy.com/media/3o6gb27m9SE4PPJyFy/giphy.webp?cid=790b761106cb7ff9576e18a685aea8625be5d5bb3ba23fd5&rid=giphy.webp",
-    "https://media2.giphy.com/media/fxgVuoKyZwEOudRXuj/giphy.webp?cid=790b7611ae2c7c12301514ba1e872613d012a7a81ad103ee&rid=giphy.webp"];
+    "https://media2.giphy.com/media/fxgVuoKyZwEOudRXuj/giphy.webp?cid=790b7611ae2c7c12301514ba1e872613d012a7a81ad103ee&rid=giphy.webp",
+    "https://media0.giphy.com/media/1BXa2alBjrCXC/giphy.webp?cid=790b7611131c4ecdc21a53d1f3bcb485f8e53f7bd5182097&rid=giphy.webp",
+    "https://media0.giphy.com/media/10tIjpzIu8fe0/200.webp?cid=790b7611131c4ecdc21a53d1f3bcb485f8e53f7bd5182097&rid=200.webp",
+    "https://media0.giphy.com/media/2WxWfiavndgcM/giphy.webp?cid=790b7611131c4ecdc21a53d1f3bcb485f8e53f7bd5182097&rid=giphy.webp",
+    "https://media1.giphy.com/media/H9nnXKNfa5wf6/200.webp?cid=790b761175b204f12ba4def17e225b98f3a5f44b2bbfcd32&rid=200.webp",
+    "https://media0.giphy.com/media/l3vRhaxVcQ1i0CZlC/200.webp?cid=790b761186dd29bc1ac19f75bf1fff790d6c86288ff878f9&rid=200.webp"];
     let random = Math.floor(Math.random() * wrong.length);
 
         return(
