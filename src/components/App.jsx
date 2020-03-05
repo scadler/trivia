@@ -1,50 +1,33 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 // import components
-import Question from "./Question";
-import Answer from "./Answer";
-import Fini from "./Fini";
+import Beginning from "./Beginning";
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = { questionNumber : 0, true : true, Score : 0, Surplus : false};
-    this.nextClick = this.nextClick.bind(this);
+    this.state = { Start : false};
+    this.startClick = this.startClick.bind(this);
   }
 
-  nextClick(){
-    this.setState({ questionNumber: this.state.questionNumber + 1})
-    console.log(this.state.questionNumber);
-
-    if (this.state.questionNumber >= this.props.question.length - 117){
-      this.setState({Surplus : true})
-    }
-
+  startClick(){
+    this.setState({ Start : true})
   }
 
   render() {  
     
     return (
-      <div className="app">
-        <div className="trivia">
-          <h1>Trivia!</h1>
-          <div>
-            <h2>Score: {this.state.Score}</h2>
-          </div>
+      <div>
+        <div className= "begin">
+          {this.state.Start === false && <h1>Trivia</h1>}
         </div>
-        <div>
-            <div className="question">
-              {this.state.Surplus === false && <Question questionText={this.props.question[this.state.questionNumber]}/>}
-              {this.state.Surplus && <Fini />}
-            </div>
-            <div className="answers">
-              {this.state.Surplus === false && <Answer choices={this.props.question[this.state.questionNumber].choices} correctChoice={this.props.question[this.state.questionNumber].correct_choice_index} key={this.state.questionNumber} addScore={(points)=>this.setState({Score: this.state.Score + points})}/>}
-            </div>
-            <div>
-            {/* make the next button add one to questionNumber in the app.jsx so that a new question is shown each time */}
-            {this.state.Surplus === false && <button onClick= {this.nextClick} className= "next">Next</button>}
-          </div>
+        <div className= "begin">
+          {this.state.Start === false && <img src="https://i.imgur.com/ndnmqbq.png"></img>}
         </div>
+        <div className= "start">
+          {this.state.Start === false && <button onClick= {this.startClick}>Start Trivia</button>}
+        </div>
+        {this.state.Start && <Beginning question= {this.props.question}/>}
       </div>
     );
   }

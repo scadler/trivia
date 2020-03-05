@@ -8,12 +8,12 @@ class Answer extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { Score : 0, correct: true, isEmptyState: null, Color1: null, Color2: null, Color3: null, Color4: null};
+    this.state = { Score : 0, correct : true, isEmptyState : null, Color1 : null, Color2 : null, Color3 : null, Color4 : null};
   }
   
   correctClick0(answer){
     if (answer === 0 && this.state.correct){  
-      this.setState({Score : this.state.Score + 1, correct: false, isEmptyState: true, Color1: "aqua"}, () => {
+      this.setState({Score : this.state.Score + 1, correct : false, isEmptyState : true, Color1 : "aqua"}, () => {
         this.props.addScore(1)
       });
       console.log(answer)

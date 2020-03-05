@@ -28,11 +28,6 @@ background: linear-gradient(90deg, rgba(0,137,251,1) 9%, rgba(23,211,255,1) 21%,
   text-align: center;
 }
 
-.trivia{
-  font-weight: bold;
-  height: 5%;
-}
-
 button{
   width: 45%;
   height: 100px;
@@ -132,4 +127,14 @@ button{
 .link{
   text-decoration: underline;
   color: blue;
+}
+
+.start{
+  display: flex;
+  justify-content: center;
+}
+
+.begin{
+  display: flex;
+  justify-content: center;
 }
