@@ -102,10 +102,6 @@ button{
 .next{
   margin-top: 2%;
 }
-/* #answers{
-  border: 8px solid yellowgreen;
-
-} */
 .next:hover{
   background-color: yellow;
   -webkit-transition-duration: 2s;

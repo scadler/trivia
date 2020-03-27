@@ -14,12 +14,13 @@ class Beginning extends Component{
       }
 
   nextClick(){
+
+    if (this.state.questionNumber >= this.props.question.length ){
+        this.setState({Surplus : true})
+      }
+
     this.setState({ questionNumber : this.state.questionNumber + 1})
     console.log(this.state.questionNumber);
-
-    if (this.state.questionNumber >= this.props.question.length - 115){
-      this.setState({Surplus : true})
-    }
 
   }
 
